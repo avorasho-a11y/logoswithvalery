@@ -1,51 +1,73 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center bg-cream pt-20">
-      <div className="max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center">
-        <div className="order-2 md:order-1">
-          <p className="text-sm tracking-[0.3em] uppercase text-muted mb-6">
-            Психолог · Логотерапевт
-          </p>
-          <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-light text-chocolate leading-none mb-4">
-            Валерия
-            <br />
-            <span className="italic">Хачатурова</span>
-          </h1>
-          <p className="text-lg md:text-xl text-dark/70 font-light mt-6 mb-10 leading-relaxed max-w-md">
-            Экзистенциальный психолог для женщин, логотерапевт
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="#contacts"
-              className="inline-block px-8 py-4 bg-chocolate text-cream text-sm tracking-widest uppercase hover:bg-dark transition-colors text-center"
-            >
-              Записаться на консультацию
-            </a>
-            <a
-              href="#about"
-              className="inline-block px-8 py-4 border border-chocolate/40 text-chocolate text-sm tracking-widest uppercase hover:border-chocolate transition-colors text-center"
-            >
-              Узнать больше
-            </a>
-          </div>
+    <section className="min-h-screen flex flex-col bg-cream">
+      {/* Mobile: photo strip at top */}
+      <div className="md:hidden relative h-[55vw] max-h-72 bg-beige overflow-hidden">
+        <div className="absolute inset-0 flex items-end p-5 bg-gradient-to-t from-cream/60 to-transparent">
+          <p className="font-serif text-warm-brown italic text-sm">Фото Валерии</p>
         </div>
-
-        <div className="order-1 md:order-2 flex justify-center md:justify-end">
-          <div className="relative w-72 h-96 md:w-80 md:h-[480px] lg:w-96 lg:h-[560px]">
-            <div className="absolute inset-0 bg-beige rounded-sm" />
-            <div className="absolute inset-4 bg-taupe/20 rounded-sm flex items-end p-6">
-              <p className="text-warm-brown font-serif text-lg italic">
-                Фото Валерии
-              </p>
-            </div>
-            <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-blue/40" />
-            <div className="absolute -top-4 -right-4 w-16 h-16 border border-warm-brown/30" />
-          </div>
-        </div>
+        <div className="absolute top-4 right-4 w-10 h-10 border border-blue/40" />
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <div className="w-px h-12 bg-chocolate/30" />
+      {/* Content */}
+      <div className="flex-1 flex items-center">
+        <div className="max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center py-16 md:py-0">
+          <div className="order-2 md:order-1">
+            <p className="text-xs tracking-[0.35em] uppercase text-muted mb-5">
+              Психолог · Логотерапевт
+            </p>
+
+            <h1 className="font-serif font-light text-chocolate leading-none mb-5">
+              <span className="block text-6xl sm:text-7xl md:text-7xl lg:text-8xl">
+                Валерия
+              </span>
+              <span className="block text-6xl sm:text-7xl md:text-7xl lg:text-8xl italic">
+                Хачатурова
+              </span>
+            </h1>
+
+            <div className="w-10 h-px bg-chocolate/30 my-6" />
+
+            <p className="text-base md:text-lg text-dark/65 font-light leading-relaxed max-w-sm mb-10">
+              Экзистенциальный психолог для женщин, логотерапевт
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="#contacts"
+                className="px-7 py-4 bg-chocolate text-cream text-xs tracking-widest uppercase hover:bg-dark transition-colors text-center"
+              >
+                Записаться на консультацию
+              </a>
+              <a
+                href="#about"
+                className="px-7 py-4 border border-chocolate/40 text-chocolate text-xs tracking-widest uppercase hover:border-chocolate transition-colors text-center"
+              >
+                Узнать больше
+              </a>
+            </div>
+
+            {/* Mobile scroll hint */}
+            <div className="flex items-center gap-3 mt-10 md:hidden">
+              <div className="w-8 h-px bg-chocolate/30" />
+              <span className="text-xs tracking-widest uppercase text-muted">
+                Листайте вниз
+              </span>
+            </div>
+          </div>
+
+          {/* Desktop photo */}
+          <div className="order-1 md:order-2 hidden md:flex justify-end">
+            <div className="relative w-80 h-[480px] lg:w-96 lg:h-[560px]">
+              <div className="absolute inset-0 bg-beige" />
+              <div className="absolute inset-4 bg-taupe/20 flex items-end p-6">
+                <p className="text-warm-brown font-serif text-lg italic">Фото Валерии</p>
+              </div>
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-blue/40" />
+              <div className="absolute -top-4 -right-4 w-16 h-16 border border-warm-brown/30" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -39,23 +39,57 @@ const categories = [
 
 export default function WorksWith() {
   return (
-    <section id="works-with" className="py-24 md:py-32 bg-beige">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="mb-4">
-          <p className="text-sm tracking-[0.3em] uppercase text-muted mb-4">
+    <section id="works-with" className="py-20 md:py-32 bg-beige">
+      <div className="max-w-6xl mx-auto">
+        <div className="px-6 mb-10">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-3">
             С чем я работаю
           </p>
-          <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate mb-4">
+          <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate mb-3">
             Узнаёте себя?
           </h2>
-          <p className="text-dark/60 font-light max-w-xl">
+          <p className="text-dark/55 font-light text-sm md:text-base max-w-md">
             Если хоть один из этих пунктов откликается — мы можем работать вместе.
           </p>
         </div>
 
-        <div className="w-12 h-px bg-chocolate/40 my-10" />
+        {/* Mobile: horizontal scroll */}
+        <div className="md:hidden flex gap-4 overflow-x-auto px-6 pb-6 snap-x snap-mandatory scrollbar-none">
+          {categories.map((cat, i) => (
+            <div
+              key={i}
+              className="flex-none w-72 snap-start bg-cream p-6"
+            >
+              <span className="font-serif text-5xl text-chocolate/10 block leading-none mb-3">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="font-serif text-xl text-chocolate mb-4 leading-tight">
+                {cat.title}
+              </h3>
+              <ul className="space-y-2">
+                {cat.hooks.map((hook, j) => (
+                  <li key={j} className="flex gap-2 text-sm text-dark/60 font-light leading-snug">
+                    <span className="text-warm-brown shrink-0">·</span>
+                    {hook}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Mobile scroll hint */}
+        <div className="md:hidden flex items-center gap-2 px-6 mt-2">
+          <div className="flex gap-1">
+            {categories.map((_, i) => (
+              <div key={i} className="w-1 h-1 rounded-full bg-chocolate/20" />
+            ))}
+          </div>
+          <span className="text-xs text-muted ml-2">листайте →</span>
+        </div>
+
+        {/* Desktop: grid */}
+        <div className="hidden md:grid md:grid-cols-3 gap-4 px-6">
           {categories.map((cat, i) => (
             <div
               key={i}
