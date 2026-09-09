@@ -1,42 +1,39 @@
 export default function Logotherapy() {
   return (
     <section id="logotherapy" className="py-12 md:py-24 bg-cream">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 md:gap-16 items-start">
+
+        {/* Left: heading + quote + pillars */}
         <div>
-          <p className="section-label mb-4">
-            Мой подход
-          </p>
-          <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate leading-tight mb-8">
+          <p className="section-label mb-2">Мой подход</p>
+          <h2 className="font-serif text-4xl md:text-6xl font-light text-chocolate leading-tight mb-4 md:mb-6">
             Что такое
             <br />
             <span className="italic">логотерапия?</span>
           </h2>
-          <div className="w-12 h-px bg-chocolate/40 mb-8" />
+          <div className="w-10 h-px bg-chocolate/40 mb-5 md:mb-7" />
 
-          <div className="bg-beige p-8 relative">
-            <p className="font-serif text-4xl text-chocolate/20 leading-none absolute top-4 left-6">
-              "
-            </p>
-            <p className="font-serif text-xl italic text-chocolate/80 leading-relaxed pt-4">
+          <div className="bg-beige p-5 md:p-8 relative">
+            <p className="font-serif text-3xl text-chocolate/20 leading-none absolute top-3 left-5">"</p>
+            <p className="font-serif text-lg md:text-xl italic text-chocolate/80 leading-relaxed pt-3">
               Человек может вынести почти любое «как», если у него есть
               достаточно сильное «зачем».
             </p>
-            <p className="text-sm text-muted mt-4">— Виктор Франкл</p>
+            <p className="text-sm text-muted mt-3">— Виктор Франкл</p>
           </div>
 
-          <div className="mt-8 flex gap-8">
+          <div className="mt-5 flex gap-6 md:gap-8">
             {["Свобода воли", "Воля к смыслу", "Смысл жизни"].map((pillar) => (
               <div key={pillar} className="text-center">
-                <div className="w-px h-8 bg-chocolate/30 mx-auto mb-3" />
-                <p className="text-xs tracking-widest uppercase text-muted">
-                  {pillar}
-                </p>
+                <div className="w-px h-6 bg-chocolate/30 mx-auto mb-2" />
+                <p className="section-label">{pillar}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="space-y-6 text-dark/70 font-light leading-loose">
+        {/* Right: body text */}
+        <div className="space-y-4 text-dark/70 font-light leading-relaxed text-sm md:text-base mt-8 md:mt-0">
           <p>
             Логотерапия — это направление психотерапии, которое создал
             Виктор Франкл. Она держится на трёх столпах: свобода воли,
@@ -53,24 +50,20 @@ export default function Logotherapy() {
             которая у вас всегда есть — даже когда кажется, что её нет.
           </p>
 
-          <div className="border-t border-taupe/40 pt-6 mt-6">
-            <p className="section-label mb-2">
-              Важно знать
-            </p>
-            <p className="font-serif text-xl text-chocolate italic">
+          <div className="border-t border-taupe/40 pt-4">
+            <p className="section-label mb-2">Важно знать</p>
+            <p className="font-serif text-lg text-chocolate italic">
               Это не глубинная, а вершинная психология.
             </p>
-            <p className="mt-3 text-sm">
-              Мы смотрим не вниз — в прошлое, а вперёд — к смыслу и
-              возможностям.
+            <p className="mt-2 text-sm">
+              Мы смотрим не вниз — в прошлое, а вперёд — к смыслу и возможностям.
             </p>
           </div>
 
-          <div className="bg-beige p-6 mt-4">
+          {/* Portrait placeholder — desktop only */}
+          <div className="hidden md:block bg-beige p-6">
             <div className="w-32 h-40 bg-taupe/20 mx-auto flex items-end p-3">
-              <p className="text-xs text-muted text-center w-full">
-                Портрет В. Франкла
-              </p>
+              <p className="text-xs text-muted text-center w-full">Портрет В. Франкла</p>
             </div>
           </div>
         </div>
