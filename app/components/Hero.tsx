@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="flex-1 flex items-center">
         <div className="max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center py-16 md:py-0">
           <div className="order-2 md:order-1">
-            <p className="text-xs tracking-[0.35em] uppercase text-muted mb-5">
+            <p className="section-label mb-5">
               Психолог · Логотерапевт
             </p>
 

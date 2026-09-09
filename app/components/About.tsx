@@ -5,7 +5,7 @@ export default function About() {
 
         {/* Mobile header */}
         <div className="md:hidden mb-8">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-3">Обо мне</p>
+          <p className="section-label mb-3">Обо мне</p>
           <h2 className="font-serif text-5xl font-light text-chocolate leading-tight">
             Я психолог-<br />
             <span className="italic">консультант</span>
@@ -27,7 +27,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 md:gap-16 md:items-start">
           {/* Desktop left column */}
           <div className="hidden md:block">
-            <p className="text-sm tracking-[0.3em] uppercase text-muted mb-4">Обо мне</p>
+            <p className="section-label mb-4">Обо мне</p>
             <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate leading-tight mb-8">
               Я психолог-<br />
               <span className="italic">консультант</span>
@@ -56,7 +56,7 @@ export default function About() {
             </p>
 
             <div className="bg-cream p-5 border-l-2 border-chocolate/30 space-y-3">
-              <p className="text-xs tracking-[0.25em] uppercase text-muted mb-3">
+              <p className="section-label mb-3">
                 Я помогу вам найти:
               </p>
               <ul className="space-y-2 text-dark/75">

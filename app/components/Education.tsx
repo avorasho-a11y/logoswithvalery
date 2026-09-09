@@ -30,7 +30,7 @@ export default function Education() {
     <section id="education" className="py-20 md:py-32 bg-cream">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-12 md:mb-16">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-3">
+          <p className="section-label mb-3">
             Моё образование
           </p>
           <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate">

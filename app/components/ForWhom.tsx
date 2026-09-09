@@ -3,7 +3,7 @@ export default function ForWhom() {
     <section className="py-24 md:py-32 bg-chocolate text-cream">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <p className="text-sm tracking-[0.3em] uppercase text-cream/50 mb-4">
+          <p className="section-label text-cream/80 mb-4">
             Кому я буду полезна
           </p>
           <h2 className="font-serif text-5xl md:text-6xl font-light leading-tight mb-8">
@@ -20,7 +20,7 @@ export default function ForWhom() {
         </div>
 
         <div className="space-y-6">
-          <p className="text-sm tracking-[0.3em] uppercase text-cream/50 mb-6">
+          <p className="section-label text-cream/80 mb-6">
             Моя аудитория
           </p>
           {[

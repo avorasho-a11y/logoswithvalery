@@ -2,7 +2,7 @@ export default function Contacts() {
   return (
     <section id="contacts" className="py-24 md:py-32 bg-beige">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <p className="text-sm tracking-[0.3em] uppercase text-muted mb-4">
+        <p className="section-label mb-4">
           Контакты
         </p>
         <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate mb-6 leading-tight">
@@ -24,7 +24,7 @@ export default function Contacts() {
 
         <div className="border-t border-taupe/40 pt-12 grid sm:grid-cols-3 gap-8 text-left">
           <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted mb-2">
+            <p className="section-label mb-2">
               Формат
             </p>
             <p className="font-serif text-lg text-chocolate">Онлайн</p>
@@ -33,7 +33,7 @@ export default function Contacts() {
             </p>
           </div>
           <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted mb-2">
+            <p className="section-label mb-2">
               Длительность
             </p>
             <p className="font-serif text-lg text-chocolate">50–60 минут</p>
@@ -42,7 +42,7 @@ export default function Contacts() {
             </p>
           </div>
           <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted mb-2">
+            <p className="section-label mb-2">
               Написать
             </p>
             <p className="font-serif text-lg text-chocolate">Telegram</p>

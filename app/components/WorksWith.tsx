@@ -42,7 +42,7 @@ export default function WorksWith() {
     <section id="works-with" className="py-20 md:py-32 bg-beige">
       <div className="max-w-6xl mx-auto">
         <div className="px-6 mb-10">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-3">
+          <p className="section-label mb-3">
             С чем я работаю
           </p>
           <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate mb-3">

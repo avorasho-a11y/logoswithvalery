@@ -3,7 +3,7 @@ export default function Logotherapy() {
     <section id="logotherapy" className="py-24 md:py-32 bg-cream">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
         <div>
-          <p className="text-sm tracking-[0.3em] uppercase text-muted mb-4">
+          <p className="section-label mb-4">
             Мой подход
           </p>
           <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate leading-tight mb-8">
@@ -54,7 +54,7 @@ export default function Logotherapy() {
           </p>
 
           <div className="border-t border-taupe/40 pt-6 mt-6">
-            <p className="text-sm tracking-[0.2em] uppercase text-muted mb-2">
+            <p className="section-label mb-2">
               Важно знать
             </p>
             <p className="font-serif text-xl text-chocolate italic">
