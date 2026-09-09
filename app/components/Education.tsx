@@ -27,37 +27,30 @@ const items = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 md:py-32 bg-cream">
+    <section id="education" className="py-12 md:py-24 bg-cream">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="mb-12 md:mb-16">
-          <p className="section-label mb-3">
-            Моё образование
-          </p>
-          <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate">
+        <div className="mb-8 md:mb-14">
+          <p className="section-label mb-2">Моё образование</p>
+          <h2 className="font-serif text-4xl md:text-6xl font-light text-chocolate">
             Образование
           </h2>
         </div>
 
-        {/* Mobile: stacked cards with big year */}
-        <div className="md:hidden space-y-0">
+        {/* Mobile: stacked list */}
+        <div className="md:hidden">
           {items.map((item, i) => (
-            <div key={i} className="flex gap-5 border-b border-taupe/30 py-6 last:border-0">
-              <div className="flex-none">
-                <span className="font-serif text-3xl text-chocolate/25 font-light leading-none">
+            <div key={i} className="flex gap-4 border-b border-taupe/30 py-5 last:border-0">
+              <div className="flex-none w-12">
+                <span className="font-serif text-2xl text-chocolate/20 font-light leading-none">
                   {item.years.split("–")[0]}
                 </span>
               </div>
               <div className="flex-1 min-w-0">
-                <div className="flex items-start justify-between gap-2 mb-1">
-                  <h3 className="font-serif text-lg text-chocolate leading-tight">{item.degree}</h3>
-                  {item.note && (
-                    <span className="flex-none text-xs text-muted italic border border-taupe/40 px-2 py-0.5 rounded-full">
-                      {item.note}
-                    </span>
-                  )}
-                </div>
-                <p className="text-sm text-dark/50 font-light">{item.place}</p>
-                <p className="text-xs text-muted mt-1">{item.years}</p>
+                <h3 className="font-serif text-base text-chocolate leading-snug mb-1">
+                  {item.degree}
+                </h3>
+                <p className="text-sm text-dark/50">{item.place}</p>
+                <p className="text-xs text-muted mt-1">{item.years} · {item.note}</p>
               </div>
             </div>
           ))}
@@ -66,7 +59,7 @@ export default function Education() {
         {/* Desktop: two-column timeline */}
         <div className="hidden md:block relative">
           <div className="absolute left-1/2 top-0 bottom-0 w-px bg-taupe/40" />
-          <div className="space-y-12">
+          <div className="space-y-10">
             {items.map((item, i) => (
               <div key={i} className="relative grid grid-cols-2 gap-16">
                 <div className={i % 2 === 0 ? "text-right pr-8" : "col-start-2 pl-8"}>
@@ -74,7 +67,7 @@ export default function Education() {
                     {item.years}
                   </span>
                 </div>
-                <div className={`bg-beige p-6 ${i % 2 === 0 ? "col-start-2 pl-8" : "col-start-1 row-start-1 pr-8 text-right"}`}>
+                <div className={`bg-beige p-5 ${i % 2 === 0 ? "col-start-2 pl-8" : "col-start-1 row-start-1 pr-8 text-right"}`}>
                   <p className="text-sm text-dark/50 font-light mb-1">{item.place}</p>
                   <p className="font-serif text-xl text-chocolate">{item.degree}</p>
                   {item.note && (

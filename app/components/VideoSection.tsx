@@ -1,6 +1,6 @@
 export default function VideoSection() {
   return (
-    <section className="py-24 md:py-32 bg-dark">
+    <section className="py-12 md:py-24 bg-dark">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <p className="section-label text-cream/70 mb-4">
           Видео-визитка

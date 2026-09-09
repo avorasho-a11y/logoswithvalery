@@ -1,6 +1,6 @@
 export default function Logotherapy() {
   return (
-    <section id="logotherapy" className="py-24 md:py-32 bg-cream">
+    <section id="logotherapy" className="py-12 md:py-24 bg-cream">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
         <div>
           <p className="section-label mb-4">

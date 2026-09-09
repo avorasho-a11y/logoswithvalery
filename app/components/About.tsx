@@ -1,20 +1,20 @@
 export default function About() {
   return (
-    <section id="about" className="py-20 md:py-32 bg-beige">
+    <section id="about" className="py-12 md:py-24 bg-beige">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Mobile header */}
-        <div className="md:hidden mb-8">
-          <p className="section-label mb-3">Обо мне</p>
-          <h2 className="font-serif text-5xl font-light text-chocolate leading-tight">
+        <div className="md:hidden mb-5">
+          <p className="section-label mb-2">Обо мне</p>
+          <h2 className="font-serif text-4xl font-light text-chocolate leading-tight">
             Я психолог-<br />
             <span className="italic">консультант</span>
           </h2>
-          <div className="w-10 h-px bg-chocolate/30 mt-6" />
+          <div className="w-10 h-px bg-chocolate/30 mt-4" />
         </div>
 
         {/* Pull quote — mobile only */}
-        <div className="md:hidden bg-chocolate text-cream px-6 py-8 mb-8 -mx-6">
+        <div className="md:hidden bg-chocolate text-cream px-6 py-6 mb-6 -mx-6">
           <p className="font-serif text-2xl italic leading-snug">
             Моя специализация — логотерапия.
             <br />
@@ -43,7 +43,7 @@ export default function About() {
           </div>
 
           {/* Text content */}
-          <div className="space-y-5 text-dark/70 leading-loose font-light text-sm md:text-base">
+          <div className="space-y-4 text-dark/70 leading-relaxed font-light text-sm md:text-base">
             <p>
               Мой главный учитель — Виктор Франкл. Тот самый, который выжил
               в концлагере и доказал: даже когда у нас отнимают всё, у нас

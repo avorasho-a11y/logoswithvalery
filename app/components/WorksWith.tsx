@@ -39,7 +39,7 @@ const categories = [
 
 export default function WorksWith() {
   return (
-    <section id="works-with" className="py-20 md:py-32 bg-beige">
+    <section id="works-with" className="py-12 md:py-24 bg-beige">
       <div className="max-w-6xl mx-auto">
         <div className="px-6 mb-10">
           <p className="section-label mb-3">

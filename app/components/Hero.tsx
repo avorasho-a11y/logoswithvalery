@@ -28,7 +28,7 @@ export default function Hero() {
 
             <div className="w-10 h-px bg-chocolate/30 my-6" />
 
-            <p className="text-base md:text-lg text-dark/65 font-light leading-relaxed max-w-sm mb-10">
+            <p className="text-base md:text-lg text-dark/65 font-light leading-relaxed max-w-sm mb-6">
               Экзистенциальный психолог для женщин, логотерапевт
             </p>
 

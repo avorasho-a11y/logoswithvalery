@@ -1,6 +1,6 @@
 export default function ForWhom() {
   return (
-    <section className="py-24 md:py-32 bg-chocolate text-cream">
+    <section className="py-12 md:py-24 bg-chocolate text-cream">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div>
           <p className="section-label text-cream/80 mb-4">
