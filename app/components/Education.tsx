@@ -8,8 +8,8 @@ const items = [
   {
     years: "2022–2026",
     place: "Московский институт психоанализа",
-    degree: "Бакалавр психологии",
-    note: "Профиль «Психологическое консультирование и психотерапия качества жизни»",
+    degree: "Бакалавр психологии, профиль «Психологическое консультирование и психотерапия качества жизни»",
+    note: "",
   },
   {
     years: "2023–2024",
@@ -36,48 +36,23 @@ export default function Education() {
           </h2>
         </div>
 
-        {/* Mobile: stacked list */}
-        <div className="md:hidden">
+        <div className="space-y-6 md:space-y-8">
           {items.map((item, i) => (
-            <div key={i} className="flex gap-4 border-b border-taupe/30 py-5 last:border-0">
-              <div className="flex-none w-12">
-                <span className="font-serif text-2xl text-chocolate/20 font-light leading-none">
-                  {item.years.split("–")[0]}
-                </span>
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="font-serif text-base text-chocolate leading-snug mb-1">
+            <div key={i} className="flex gap-3 border-b border-taupe/30 pb-6 last:border-0 last:pb-0">
+              <span className="text-warm-brown font-semibold mt-0.5 shrink-0">·</span>
+              <div className="min-w-0">
+                <p className="text-sm md:text-base font-semibold text-dark leading-snug">
+                  {item.years} — {item.place}
+                </p>
+                <p className="text-sm md:text-base text-dark/65 mt-1 leading-snug">
                   {item.degree}
-                </h3>
-                <p className="text-sm text-dark/50">{item.place}</p>
-                <p className="text-xs text-muted mt-1">{item.years} · {item.note}</p>
+                  {item.note && (
+                    <span className="text-muted"> ({item.note})</span>
+                  )}
+                </p>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Desktop: two-column timeline */}
-        <div className="hidden md:block relative">
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-taupe/40" />
-          <div className="space-y-10">
-            {items.map((item, i) => (
-              <div key={i} className="relative grid grid-cols-2 gap-16">
-                <div className={i % 2 === 0 ? "text-right pr-8" : "col-start-2 pl-8"}>
-                  <span className="font-serif text-3xl text-warm-brown font-light">
-                    {item.years}
-                  </span>
-                </div>
-                <div className={`bg-beige p-5 ${i % 2 === 0 ? "col-start-2 pl-8" : "col-start-1 row-start-1 pr-8 text-right"}`}>
-                  <p className="text-sm text-dark/50 font-light mb-1">{item.place}</p>
-                  <p className="font-serif text-xl text-chocolate">{item.degree}</p>
-                  {item.note && (
-                    <p className="text-sm text-muted italic mt-1">{item.note}</p>
-                  )}
-                </div>
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-chocolate" />
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
