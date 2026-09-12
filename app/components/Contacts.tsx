@@ -29,7 +29,7 @@ export default function Contacts() {
             </p>
             <p className="font-serif text-lg text-chocolate">Онлайн</p>
             <p className="text-sm text-dark/50 font-light mt-1">
-              Zoom / Google Meet
+              Zoom
             </p>
           </div>
           <div>

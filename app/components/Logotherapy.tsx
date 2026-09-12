@@ -16,10 +16,9 @@ export default function Logotherapy() {
           <div className="bg-beige p-5 md:p-8 relative">
             <p className="font-serif text-3xl text-chocolate/20 leading-none absolute top-3 left-5">"</p>
             <p className="font-serif text-lg md:text-xl italic text-chocolate/80 leading-relaxed pt-3">
-              Человек может вынести почти любое «как», если у него есть
-              достаточно сильное «зачем».
+              У кого есть <strong>«зачем»</strong> жить, тот выдержит почти любое <strong>«как»</strong>
             </p>
-            <p className="text-sm text-muted mt-3">— Виктор Франкл</p>
+            <p className="text-sm text-muted mt-3">— Фридрих Ницше</p>
           </div>
 
           <div className="mt-5 flex gap-6 md:gap-8">

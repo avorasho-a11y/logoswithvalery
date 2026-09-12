@@ -45,12 +45,12 @@ export default function WorksWith() {
           <p className="section-label mb-3">
             С чем я работаю
           </p>
-          <h2 className="font-serif text-5xl md:text-6xl font-semibold text-chocolate mb-3">
-            Узнаёте себя?
-          </h2>
-          <p className="text-dark/55 font-light text-sm md:text-base max-w-md">
+          <p className="text-dark/65 font-normal text-sm md:text-base max-w-md mb-3">
             Если хоть один из этих пунктов откликается — мы можем работать вместе.
           </p>
+          <h2 className="font-serif text-5xl md:text-6xl font-semibold text-chocolate">
+            Узнаёте себя?
+          </h2>
         </div>
 
         {/* Mobile: horizontal scroll */}
