@@ -5,7 +5,7 @@ export default function Contacts() {
         <p className="section-label mb-4">
           Контакты
         </p>
-        <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate mb-6 leading-tight">
+        <h2 className="font-serif text-5xl md:text-6xl font-semibold text-chocolate mb-6 leading-tight">
           Готовы сделать
           <br />
           <span className="italic">первый шаг?</span>

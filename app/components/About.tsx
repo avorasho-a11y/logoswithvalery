@@ -6,7 +6,7 @@ export default function About() {
         {/* Mobile header */}
         <div className="md:hidden mb-5">
           <p className="section-label mb-2">Обо мне</p>
-          <h2 className="font-serif text-4xl font-light text-chocolate leading-tight">
+          <h2 className="font-serif text-4xl font-semibold text-chocolate leading-tight">
             Я психолог-<br />
             <span className="italic">консультант</span>
           </h2>
@@ -28,7 +28,7 @@ export default function About() {
           {/* Desktop left column */}
           <div className="hidden md:block">
             <p className="section-label mb-4">Обо мне</p>
-            <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate leading-tight mb-8">
+            <h2 className="font-serif text-5xl md:text-6xl font-semibold text-chocolate leading-tight mb-6">
               Я психолог-<br />
               <span className="italic">консультант</span>
             </h2>

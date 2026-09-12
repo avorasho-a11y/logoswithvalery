@@ -10,22 +10,24 @@
   --color-dark: #2C2018;
   --color-muted: #7A5C44;
   --font-serif: var(--font-cormorant), Georgia, serif;
-  --font-sans: var(--font-nunito), system-ui, sans-serif;
+  --font-sans: var(--font-montserrat), system-ui, sans-serif;
 }
 
 body {
   background-color: #F5EEE6;
   color: #2C2018;
-  font-family: var(--font-nunito), system-ui, sans-serif;
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  font-weight: 500;
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 600;
 }
 
 /* Small uppercase section labels */
 .section-label {
-  font-family: var(--font-nunito), system-ui, sans-serif;
+  font-family: var(--font-montserrat), system-ui, sans-serif;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.22em;

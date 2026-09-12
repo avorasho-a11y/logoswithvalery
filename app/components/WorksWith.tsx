@@ -45,7 +45,7 @@ export default function WorksWith() {
           <p className="section-label mb-3">
             С чем я работаю
           </p>
-          <h2 className="font-serif text-5xl md:text-6xl font-light text-chocolate mb-3">
+          <h2 className="font-serif text-5xl md:text-6xl font-semibold text-chocolate mb-3">
             Узнаёте себя?
           </h2>
           <p className="text-dark/55 font-light text-sm md:text-base max-w-md">
@@ -68,7 +68,7 @@ export default function WorksWith() {
               </h3>
               <ul className="space-y-2">
                 {cat.hooks.map((hook, j) => (
-                  <li key={j} className="flex gap-2 text-sm text-dark/60 font-light leading-snug">
+                  <li key={j} className="flex gap-2 text-sm text-dark/60 font-normal leading-snug">
                     <span className="text-warm-brown shrink-0">·</span>
                     {hook}
                   </li>
@@ -101,7 +101,7 @@ export default function WorksWith() {
               </h3>
               <ul className="space-y-2">
                 {cat.hooks.map((hook, j) => (
-                  <li key={j} className="flex gap-2 text-sm text-dark/60 font-light leading-snug">
+                  <li key={j} className="flex gap-2 text-sm text-dark/60 font-normal leading-snug">
                     <span className="text-warm-brown shrink-0 mt-0.5">·</span>
                     {hook}
                   </li>

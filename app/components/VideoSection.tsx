@@ -3,7 +3,7 @@ export default function VideoSection() {
     <section className="py-10 md:py-20 bg-dark">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <p className="section-label text-cream/70 mb-2">Видео-визитка</p>
-        <h2 className="font-serif text-4xl md:text-6xl font-light text-cream mb-6 md:mb-10">
+        <h2 className="font-serif text-4xl md:text-6xl font-semibold text-cream mb-6 md:mb-10">
           Познакомимся
           <br />
           <span className="italic text-cream/60">поближе</span>

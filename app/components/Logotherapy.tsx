@@ -6,7 +6,7 @@ export default function Logotherapy() {
         {/* Left: heading + quote + pillars */}
         <div>
           <p className="section-label mb-2">Мой подход</p>
-          <h2 className="font-serif text-4xl md:text-6xl font-light text-chocolate leading-tight mb-4 md:mb-6">
+          <h2 className="font-serif text-4xl md:text-6xl font-semibold text-chocolate leading-tight mb-4 md:mb-6">
             Что такое
             <br />
             <span className="italic">логотерапия?</span>
@@ -33,7 +33,7 @@ export default function Logotherapy() {
         </div>
 
         {/* Right: body text */}
-        <div className="space-y-4 text-dark/70 font-light leading-relaxed text-sm md:text-base mt-8 md:mt-0">
+        <div className="space-y-4 text-dark/70 font-normal leading-relaxed text-sm md:text-base mt-8 md:mt-0">
           <p>
             Логотерапия — это направление психотерапии, которое создал
             Виктор Франкл. Она держится на трёх столпах: свобода воли,

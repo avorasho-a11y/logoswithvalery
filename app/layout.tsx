@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Nunito } from "next/font/google";
+import { Cormorant_Garamond, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin", "cyrillic"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
-const nunito = Nunito({
-  variable: "--font-nunito",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "600", "700"],
 });
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="ru"
-      className={`${cormorant.variable} ${nunito.variable}`}
+      className={`${cormorant.variable} ${montserrat.variable}`}
     >
       <body>{children}</body>
     </html>

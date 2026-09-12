@@ -31,7 +31,7 @@ export default function Education() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-8 md:mb-14">
           <p className="section-label mb-2">Моё образование</p>
-          <h2 className="font-serif text-4xl md:text-6xl font-light text-chocolate">
+          <h2 className="font-serif text-4xl md:text-6xl font-semibold text-chocolate">
             Образование
           </h2>
         </div>

@@ -17,7 +17,7 @@ export default function Hero() {
               Психолог · Логотерапевт
             </p>
 
-            <h1 className="font-serif font-light text-chocolate leading-none mb-5">
+            <h1 className="font-serif font-semibold text-chocolate leading-none mb-5">
               <span className="block text-6xl sm:text-7xl md:text-7xl lg:text-8xl">
                 Валерия
               </span>
@@ -28,7 +28,7 @@ export default function Hero() {
 
             <div className="w-10 h-px bg-chocolate/30 my-6" />
 
-            <p className="text-base md:text-lg text-dark/65 font-light leading-relaxed max-w-sm mb-6">
+            <p className="text-base md:text-lg text-dark/65 font-normal leading-relaxed max-w-sm mb-6">
               Экзистенциальный психолог для женщин, логотерапевт
             </p>
 
