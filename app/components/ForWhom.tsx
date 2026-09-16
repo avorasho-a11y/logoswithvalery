@@ -9,7 +9,7 @@ export default function ForWhom() {
           <h2 className="font-serif text-5xl md:text-6xl font-semibold leading-tight mb-8">
             Я работаю
             <br />
-            <span className="italic">только с женщинами</span>
+            только с женщинами
           </h2>
           <div className="w-12 h-px bg-cream/30 mb-8" />
           <p className="text-cream/70 font-normal leading-relaxed">

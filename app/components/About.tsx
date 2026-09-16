@@ -8,7 +8,7 @@ export default function About() {
           <p className="section-label mb-2">Обо мне</p>
           <h2 className="font-serif text-4xl font-semibold text-chocolate leading-tight">
             Я психолог-<br />
-            <span className="italic">консультант</span>
+            консультант
           </h2>
           <div className="w-10 h-px bg-chocolate/30 mt-4" />
         </div>
@@ -30,7 +30,7 @@ export default function About() {
             <p className="section-label mb-4">Обо мне</p>
             <h2 className="font-serif text-5xl md:text-6xl font-semibold text-chocolate leading-tight mb-6">
               Я психолог-<br />
-              <span className="italic">консультант</span>
+              консультант
             </h2>
             <div className="w-12 h-px bg-chocolate/40 mb-8" />
             <p className="text-2xl md:text-3xl font-serif font-light text-chocolate/80 leading-relaxed mb-8 italic">

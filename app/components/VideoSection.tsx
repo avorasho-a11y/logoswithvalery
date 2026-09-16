@@ -6,7 +6,7 @@ export default function VideoSection() {
         <h2 className="font-serif text-4xl md:text-6xl font-semibold text-cream mb-6 md:mb-10">
           Познакомимся
           <br />
-          <span className="italic text-cream/60">поближе</span>
+          поближе
         </h2>
 
         <div className="relative aspect-video bg-chocolate/40 flex items-center justify-center">
