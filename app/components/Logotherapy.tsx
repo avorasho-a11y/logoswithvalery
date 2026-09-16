@@ -9,7 +9,7 @@ export default function Logotherapy() {
           <h2 className="font-serif text-4xl md:text-6xl font-semibold text-chocolate leading-tight mb-4 md:mb-6">
             Что такое
             <br />
-            <span className="italic">логотерапия?</span>
+            логотерапия?
           </h2>
           <div className="w-10 h-px bg-chocolate/40 mb-5 md:mb-7" />
 
@@ -60,13 +60,13 @@ export default function Logotherapy() {
           </div>
 
           {/* Portrait — desktop only */}
-          <div className="hidden md:block bg-beige p-6 text-center">
+          <div className="hidden md:block text-center">
             <img
               src="/frankl.jpg"
               alt="Виктор Франкл"
-              className="w-32 h-40 mx-auto object-cover object-top grayscale"
+              className="w-full max-w-[220px] mx-auto object-cover grayscale"
             />
-            <p className="text-xs text-muted mt-2">Виктор Франкл, 1945</p>
+            <p className="text-xs text-muted mt-2">Виктор Франкл</p>
           </div>
         </div>
       </div>

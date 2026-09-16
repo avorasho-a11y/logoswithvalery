@@ -3,9 +3,8 @@ export default function Hero() {
     <section className="min-h-screen flex flex-col bg-cream">
       {/* Mobile: photo strip at top */}
       <div className="md:hidden relative h-[55vw] max-h-72 bg-beige overflow-hidden">
-        <div className="absolute inset-0 flex items-end p-5 bg-gradient-to-t from-cream/60 to-transparent">
-          <p className="font-serif text-warm-brown italic text-sm">Фото Валерии</p>
-        </div>
+        <img src="/valeria.jpg" alt="Валерия Хачатурова" className="absolute inset-0 w-full h-full object-cover object-top" />
+        <div className="absolute inset-0 bg-gradient-to-t from-cream/40 to-transparent" />
         <div className="absolute top-4 right-4 w-10 h-10 border border-blue/40" />
       </div>
 
@@ -21,7 +20,7 @@ export default function Hero() {
               <span className="block text-6xl sm:text-7xl md:text-7xl lg:text-8xl">
                 Валерия
               </span>
-              <span className="block text-6xl sm:text-7xl md:text-7xl lg:text-8xl italic">
+              <span className="block text-6xl sm:text-7xl md:text-7xl lg:text-8xl">
                 Хачатурова
               </span>
             </h1>
@@ -60,9 +59,7 @@ export default function Hero() {
           <div className="order-1 md:order-2 hidden md:flex justify-end">
             <div className="relative w-80 h-[480px] lg:w-96 lg:h-[560px]">
               <div className="absolute inset-0 bg-beige" />
-              <div className="absolute inset-4 bg-taupe/20 flex items-end p-6">
-                <p className="text-warm-brown font-serif text-lg italic">Фото Валерии</p>
-              </div>
+              <img src="/valeria.jpg" alt="Валерия Хачатурова" className="absolute inset-0 w-full h-full object-cover object-top" />
               <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-blue/40" />
               <div className="absolute -top-4 -right-4 w-16 h-16 border border-warm-brown/30" />
             </div>
