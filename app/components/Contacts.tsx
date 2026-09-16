@@ -59,8 +59,12 @@ export default function Contacts() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-taupe/30 flex flex-col sm:flex-row justify-between items-center gap-4">
-        <p className="font-serif text-xl text-chocolate">Валерия Хачатурова</p>
+      <div className="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-taupe/30 flex flex-col sm:flex-row justify-between items-start gap-6">
+        <div className="space-y-1">
+          <p className="font-serif text-xl text-chocolate">Валерия Хачатурова</p>
+          <p className="text-xs text-muted">ИП Хачатурова Валерия Владимировна · ОГРНИП 315774600090062 · ИНН 773610884416</p>
+          <p className="text-xs text-muted">г. Москва, Университетский проспект, 9-106</p>
+        </div>
         <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
           <a href="/privacy" className="text-xs text-muted hover:text-chocolate transition-colors">
             Персональные данные
