@@ -34,11 +34,11 @@ export default function About() {
             </h2>
             <div className="w-12 h-px bg-chocolate/40 mb-8" />
             <p className="text-2xl md:text-3xl font-serif font-light text-chocolate/80 leading-relaxed mb-8 italic">
-              Моя специализация — <strong>Логотерапия</strong>.
+              Моя специализация — <span className="font-bold">Логотерапия</span>.
               <br />
               Мы с вами не будем исправлять речь,
               <br />
-              мы будем искать <strong>Смысл</strong>.
+              мы будем искать <span className="font-bold">Смысл</span>.
             </p>
           </div>
 
