@@ -25,6 +25,10 @@ h1, h2, h3, h4 {
   font-weight: 600;
 }
 
+p:not(.section-label) {
+  text-align: justify;
+}
+
 /* Small uppercase section labels */
 .section-label {
   font-family: var(--font-montserrat), system-ui, sans-serif;
