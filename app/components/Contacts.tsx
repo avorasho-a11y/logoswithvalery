@@ -10,7 +10,7 @@ export default function Contacts() {
           <br />
           первый шаг?
         </h2>
-        <p className="text-dark/60 font-light max-w-md mx-auto mb-8 leading-relaxed">
+        <p className="text-dark/60 font-light max-w-md mx-auto mb-8 leading-snug">
           Первая консультация — это знакомство. Мы поговорим о вашем
           запросе, и вы поймёте, хотите ли продолжить работу.
         </p>
@@ -62,17 +62,17 @@ export default function Contacts() {
       <div className="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-taupe/30 space-y-4">
         <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
           <p className="font-serif text-xl text-chocolate">Валерия Хачатурова</p>
-          <div className="flex items-center gap-4">
-            <a href="/privacy" className="text-xs text-muted hover:text-chocolate transition-colors whitespace-nowrap">
+          <div className="flex flex-wrap gap-x-4 gap-y-1 items-center">
+            <a href="/privacy" className="text-xs text-muted hover:text-chocolate transition-colors">
               Персональные данные
             </a>
-            <a href="/oferta" className="text-xs text-muted hover:text-chocolate transition-colors whitespace-nowrap">
+            <a href="/oferta" className="text-xs text-muted hover:text-chocolate transition-colors">
               Договор-оферта
             </a>
-            <p className="text-xs text-muted whitespace-nowrap">© {new Date().getFullYear()}</p>
+            <p className="text-xs text-muted">© {new Date().getFullYear()}</p>
           </div>
         </div>
-        <p className="text-xs text-muted leading-relaxed">
+        <p className="text-xs text-muted leading-snug">
           ИП Хачатурова Валерия Владимировна · ОГРНИП 315774600090062 · ИНН 773610884416 · г. Москва, Университетский проспект, 9-106
         </p>
       </div>

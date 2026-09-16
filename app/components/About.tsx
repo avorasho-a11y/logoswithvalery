@@ -33,7 +33,7 @@ export default function About() {
               консультант
             </h2>
             <div className="w-12 h-px bg-chocolate/40 mb-8" />
-            <p className="text-2xl md:text-3xl font-serif font-light text-chocolate/80 leading-relaxed mb-8 italic">
+            <p className="text-2xl md:text-3xl font-serif font-light text-chocolate/80 leading-snug mb-8 italic">
               Моя специализация — <span className="font-bold">Логотерапия</span>.
               <br />
               Мы с вами не будем исправлять речь,
@@ -43,7 +43,7 @@ export default function About() {
           </div>
 
           {/* Text content */}
-          <div className="space-y-4 text-dark/70 leading-relaxed font-light text-sm md:text-base">
+          <div className="space-y-4 text-dark/70 leading-snug font-light text-sm md:text-base">
             <p>
               Мой главный учитель — Виктор Франкл. Тот самый, который выжил
               в концлагере и доказал: даже когда у нас отнимают всё, у нас

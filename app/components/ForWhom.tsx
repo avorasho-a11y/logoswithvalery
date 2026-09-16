@@ -12,7 +12,7 @@ export default function ForWhom() {
             только с женщинами
           </h2>
           <div className="w-12 h-px bg-cream/30 mb-8" />
-          <p className="text-cream/70 font-normal leading-relaxed">
+          <p className="text-cream/70 font-normal leading-snug">
             Это осознанный выбор. Женский опыт — особенный. Кризисы,
             роли, ожидания, переходы — всё это имеет свою специфику.
             Я сама женщина, и это пространство создано специально для вас.
@@ -33,7 +33,7 @@ export default function ForWhom() {
               <span className="font-serif text-3xl text-cream/30 leading-none mt-1">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <p className="text-cream/80 font-normal leading-relaxed">{item}</p>
+              <p className="text-cream/80 font-normal leading-snug">{item}</p>
             </div>
           ))}
         </div>

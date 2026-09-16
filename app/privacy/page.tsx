@@ -12,7 +12,7 @@ export default function Privacy() {
         </h1>
         <div className="w-10 h-px bg-chocolate/40 my-6" />
 
-        <div className="space-y-6 text-dark/70 text-sm md:text-base leading-relaxed">
+        <div className="space-y-6 text-dark/70 text-sm md:text-base leading-snug">
           <p>
             Настоящим я, субъект персональных данных, даю своё согласие на обработку
             моих персональных данных Индивидуальному предпринимателю{" "}

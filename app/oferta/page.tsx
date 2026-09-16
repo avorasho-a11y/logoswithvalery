@@ -12,7 +12,7 @@ export default function Oferta() {
         </h1>
         <div className="w-10 h-px bg-chocolate/40 my-6" />
 
-        <div className="space-y-8 text-dark/70 text-sm md:text-base leading-relaxed">
+        <div className="space-y-8 text-dark/70 text-sm md:text-base leading-snug">
 
           <div>
             <p className="section-label mb-3">1. Общие положения</p>

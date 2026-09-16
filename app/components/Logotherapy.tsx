@@ -15,7 +15,7 @@ export default function Logotherapy() {
 
           <div className="bg-beige p-5 md:p-8 relative">
             <p className="font-serif text-3xl text-chocolate/20 leading-none absolute top-3 left-5">"</p>
-            <p className="font-serif text-lg md:text-xl italic text-chocolate/80 leading-relaxed pt-3">
+            <p className="font-serif text-lg md:text-xl italic text-chocolate/80 leading-snug pt-3">
               У кого есть <strong>«зачем»</strong> жить, тот выдержит почти любое <strong>«как»</strong>
             </p>
             <p className="text-sm text-muted mt-3">— Фридрих Ницше</p>
@@ -32,7 +32,7 @@ export default function Logotherapy() {
         </div>
 
         {/* Right: body text */}
-        <div className="space-y-4 text-dark/70 font-normal leading-relaxed text-sm md:text-base mt-8 md:mt-0">
+        <div className="space-y-4 text-dark/70 font-normal leading-snug text-sm md:text-base mt-8 md:mt-0">
           <p>
             Логотерапия — это направление психотерапии, которое создал
             Виктор Франкл. Она держится на трёх столпах: свобода воли,
