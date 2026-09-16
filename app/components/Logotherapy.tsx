@@ -59,11 +59,14 @@ export default function Logotherapy() {
             </p>
           </div>
 
-          {/* Portrait placeholder — desktop only */}
-          <div className="hidden md:block bg-beige p-6">
-            <div className="w-32 h-40 bg-taupe/20 mx-auto flex items-end p-3">
-              <p className="text-xs text-muted text-center w-full">Портрет В. Франкла</p>
-            </div>
+          {/* Portrait — desktop only */}
+          <div className="hidden md:block bg-beige p-6 text-center">
+            <img
+              src="/frankl.jpg"
+              alt="Виктор Франкл"
+              className="w-32 h-40 mx-auto object-cover object-top grayscale"
+            />
+            <p className="text-xs text-muted mt-2">Виктор Франкл, 1945</p>
           </div>
         </div>
       </div>
