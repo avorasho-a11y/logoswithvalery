@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col bg-cream">
       {/* Mobile: photo strip at top */}
-      <div className="md:hidden relative h-[55vw] max-h-72 bg-beige overflow-hidden">
+      <div className="md:hidden relative h-[55vw] max-h-72 bg-beige overflow-hidden rounded-b-3xl">
         <img src="/valeria.jpg" alt="Валерия Хачатурова" className="absolute inset-0 w-full h-full object-cover object-top" />
         <div className="absolute inset-0 bg-gradient-to-t from-cream/40 to-transparent" />
         <div className="absolute top-4 right-4 w-10 h-10 border border-blue/40" />
@@ -57,7 +57,7 @@ export default function Hero() {
 
           {/* Desktop photo */}
           <div className="order-1 md:order-2 hidden md:flex justify-end">
-            <div className="relative w-80 h-[480px] lg:w-96 lg:h-[560px]">
+            <div className="relative w-80 h-[480px] lg:w-96 lg:h-[560px] rounded-3xl overflow-hidden">
               <div className="absolute inset-0 bg-beige" />
               <img src="/valeria.jpg" alt="Валерия Хачатурова" className="absolute inset-0 w-full h-full object-cover object-top" />
               <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-blue/40" />

@@ -64,7 +64,7 @@ export default function Logotherapy() {
             <img
               src="/frankl.jpg"
               alt="Виктор Франкл"
-              className="w-full max-w-[220px] mx-auto object-cover grayscale"
+              className="w-full max-w-[220px] mx-auto object-cover grayscale rounded-2xl"
             />
             <p className="text-xs text-muted mt-2">Виктор Франкл</p>
           </div>
