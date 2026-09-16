@@ -5,7 +5,7 @@ export default function Contacts() {
         <p className="section-label mb-4">
           Контакты
         </p>
-        <h2 className="font-serif text-5xl md:text-6xl font-semibold text-chocolate mb-6 leading-tight">
+        <h2 className="font-serif text-5xl md:text-6xl font-semibold text-chocolate mb-6 leading-none">
           Готовы сделать
           <br />
           первый шаг?
@@ -59,23 +59,22 @@ export default function Contacts() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-taupe/30 flex flex-col sm:flex-row justify-between items-start gap-6">
-        <div className="space-y-1">
+      <div className="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-taupe/30 space-y-4">
+        <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
           <p className="font-serif text-xl text-chocolate">Валерия Хачатурова</p>
-          <p className="text-xs text-muted">ИП Хачатурова Валерия Владимировна · ОГРНИП 315774600090062 · ИНН 773610884416</p>
-          <p className="text-xs text-muted">г. Москва, Университетский проспект, 9-106</p>
+          <div className="flex items-center gap-4">
+            <a href="/privacy" className="text-xs text-muted hover:text-chocolate transition-colors whitespace-nowrap">
+              Персональные данные
+            </a>
+            <a href="/oferta" className="text-xs text-muted hover:text-chocolate transition-colors whitespace-nowrap">
+              Договор-оферта
+            </a>
+            <p className="text-xs text-muted whitespace-nowrap">© {new Date().getFullYear()}</p>
+          </div>
         </div>
-        <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
-          <a href="/privacy" className="text-xs text-muted hover:text-chocolate transition-colors">
-            Персональные данные
-          </a>
-          <a href="/oferta" className="text-xs text-muted hover:text-chocolate transition-colors">
-            Договор-оферта
-          </a>
-          <p className="text-sm text-muted">
-            © {new Date().getFullYear()} · Экзистенциальный психолог
-          </p>
-        </div>
+        <p className="text-xs text-muted leading-relaxed">
+          ИП Хачатурова Валерия Владимировна · ОГРНИП 315774600090062 · ИНН 773610884416 · г. Москва, Университетский проспект, 9-106
+        </p>
       </div>
     </section>
   );
