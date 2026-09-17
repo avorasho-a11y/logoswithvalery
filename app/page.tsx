@@ -5,6 +5,7 @@ import Education from "./components/Education";
 import WorksWith from "./components/WorksWith";
 import ForWhom from "./components/ForWhom";
 import Logotherapy from "./components/Logotherapy";
+import MyWorks from "./components/MyWorks";
 import VideoSection from "./components/VideoSection";
 import Contacts from "./components/Contacts";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <WorksWith />
         <ForWhom />
         <Logotherapy />
+        <MyWorks />
         <VideoSection />
         <Contacts />
       </main>

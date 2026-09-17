@@ -131,7 +131,6 @@ export default function Oferta() {
               <p>ИП Хачатурова Валерия Владимировна</p>
               <p>ОГРНИП: 315774600090062</p>
               <p>ИНН: 773610884416</p>
-              <p>Адрес: г. Москва, Университетский проспект, 9-106</p>
               <p>Телефон: <a href="tel:+79857607579" className="text-chocolate">+7 985 760-75-79</a></p>
               <p>Email: <a href="mailto:N7607579@yandex.ru" className="text-chocolate">N7607579@yandex.ru</a></p>
             </div>
