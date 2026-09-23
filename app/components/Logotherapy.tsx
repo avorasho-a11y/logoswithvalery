@@ -28,7 +28,7 @@ export default function Logotherapy() {
               alt="Виктор Франкл"
               className="w-32 mx-auto object-cover grayscale rounded-2xl"
             />
-            <p className="text-xs text-muted mt-2">Виктор Франкл</p>
+            <p className="text-xs text-muted mt-2 text-center w-full">Виктор Франкл</p>
           </div>
 
           <div className="mt-5 flex gap-6 md:gap-8">
