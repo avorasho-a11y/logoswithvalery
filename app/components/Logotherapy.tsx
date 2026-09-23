@@ -70,7 +70,7 @@ export default function Logotherapy() {
           </div>
 
           {/* Portrait — desktop only */}
-          <div className="hidden md:block text-center md:text-left">
+          <div className="hidden md:block text-center">
             <img
               src="/frankl.jpg"
               alt="Виктор Франкл"
