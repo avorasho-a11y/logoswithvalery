@@ -1,6 +1,6 @@
 export default function ForWhom() {
   return (
-    <section className="bg-chocolate text-cream overflow-hidden">
+    <section className="bg-chocolate text-cream">
       <div className="py-12 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 md:gap-10 items-start">
 
@@ -53,11 +53,11 @@ export default function ForWhom() {
         </div>
 
         {/* Photo - mobile only, below content */}
-        <div className="md:hidden px-6 mt-8">
+        <div className="md:hidden px-6 mt-8 pb-4">
           <img
             src="/forwhom-photo.jpg"
             alt="Валерия Хачатурова"
-            className="w-full rounded-2xl"
+            className="w-full h-auto rounded-2xl block"
           />
         </div>
       </div>

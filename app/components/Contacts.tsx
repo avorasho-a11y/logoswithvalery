@@ -37,11 +37,11 @@ export default function Contacts() {
           </div>
 
           {/* Photo - mobile: below buttons, desktop: right column */}
-          <div className="md:hidden overflow-hidden rounded-2xl">
+          <div className="md:hidden mt-8 rounded-2xl overflow-hidden">
             <img
               src="/contacts-photo.jpg"
               alt="Валерия Хачатурова"
-              className="w-full"
+              className="w-full h-auto block"
             />
           </div>
           <div className="hidden md:block overflow-hidden rounded-2xl">
