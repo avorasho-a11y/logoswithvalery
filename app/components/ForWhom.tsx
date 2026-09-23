@@ -23,7 +23,7 @@ export default function ForWhom() {
           </div>
 
           {/* Center: list */}
-          <div className="space-y-6">
+          <div className="space-y-6 mt-10 md:mt-0">
             <p className="section-label text-cream/80 mb-6">
               Моя аудитория
             </p>
