@@ -12,8 +12,10 @@ export default function VideoSection() {
         <div className="flex justify-center">
           <video
             src="/video-card.mp4"
+            poster="/video-poster.jpg"
             controls
             playsInline
+            preload="metadata"
             className="w-full max-w-xs md:max-w-sm rounded-2xl shadow-2xl"
             style={{ aspectRatio: "532/640" }}
           />
