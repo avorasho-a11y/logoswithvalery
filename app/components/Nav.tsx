@@ -33,9 +33,9 @@ export default function Nav() {
         }`}
       >
         <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <span className="font-serif text-lg text-chocolate tracking-wide">
+          <a href="/" className="font-serif text-lg text-chocolate tracking-wide hover:opacity-80 transition-opacity">
             В. Хачатурова
-          </span>
+          </a>
 
           {/* Desktop links */}
           <ul className="hidden md:flex gap-8">
@@ -52,7 +52,9 @@ export default function Nav() {
           </ul>
 
           <a
-            href="#contacts"
+            href="https://wa.me/79857607579"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:block text-sm px-5 py-2 border border-chocolate text-chocolate hover:bg-chocolate hover:text-cream transition-all tracking-wider"
           >
             Записаться
@@ -109,7 +111,9 @@ export default function Nav() {
           ))}
         </ul>
         <a
-          href="#contacts"
+          href="https://wa.me/79857607579"
+          target="_blank"
+          rel="noopener noreferrer"
           onClick={() => setOpen(false)}
           className="mt-12 inline-block px-8 py-4 bg-cream text-chocolate text-sm tracking-widest uppercase text-center"
         >

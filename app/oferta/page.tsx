@@ -131,7 +131,7 @@ export default function Oferta() {
               <p>ИП Хачатурова Валерия Владимировна</p>
               <p>ОГРНИП: 315774600090062</p>
               <p>ИНН: 773610884416</p>
-              <p>Телефон: <a href="tel:+79857607579" className="text-chocolate">+7 985 760-75-79</a></p>
+              <p>Телефон: <a href="https://wa.me/79857607579" target="_blank" rel="noopener noreferrer" className="text-chocolate">+7 985 760-75-79</a></p>
               <p>Email: <a href="mailto:N7607579@yandex.ru" className="text-chocolate">N7607579@yandex.ru</a></p>
             </div>
           </div>

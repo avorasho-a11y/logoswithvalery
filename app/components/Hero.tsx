@@ -33,7 +33,9 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="#contacts"
+                href="https://wa.me/79857607579"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-7 py-4 bg-chocolate text-cream text-xs tracking-widest uppercase hover:bg-dark transition-colors text-center"
               >
                 Записаться на консультацию
