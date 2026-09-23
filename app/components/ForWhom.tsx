@@ -45,7 +45,7 @@ export default function ForWhom() {
           {/* Right: photo — desktop only */}
           <div className="hidden md:block self-center overflow-hidden rounded-2xl">
             <img
-              src="/contacts-photo.jpg"
+              src="/forwhom-photo.jpg"
               alt="Валерия Хачатурова"
               className="w-full"
             />
@@ -55,7 +55,7 @@ export default function ForWhom() {
         {/* Photo - mobile only, below content */}
         <div className="md:hidden px-6 mt-8">
           <img
-            src="/contacts-photo.jpg"
+            src="/forwhom-photo.jpg"
             alt="Валерия Хачатурова"
             className="w-full rounded-2xl"
           />
