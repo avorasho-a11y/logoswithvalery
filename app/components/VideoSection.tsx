@@ -9,14 +9,14 @@ export default function VideoSection() {
           поближе
         </h2>
 
-        <div className="relative aspect-video bg-chocolate/40 flex items-center justify-center">
-          <div className="absolute inset-0 border border-cream/10" />
-          <div className="text-center">
-            <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border border-cream/30 flex items-center justify-center mx-auto mb-3 hover:border-cream/60 transition-colors cursor-pointer">
-              <div className="w-0 h-0 border-t-[7px] border-t-transparent border-b-[7px] border-b-transparent border-l-[12px] border-l-cream/60 ml-1" />
-            </div>
-            <p className="section-label text-cream/50">Видео будет добавлено</p>
-          </div>
+        <div className="flex justify-center">
+          <video
+            src="/video-card.mp4"
+            controls
+            playsInline
+            className="w-full max-w-xs md:max-w-sm rounded-2xl shadow-2xl"
+            style={{ aspectRatio: "532/640" }}
+          />
         </div>
       </div>
     </section>
