@@ -33,18 +33,7 @@ export default function ForWhom() {
             </p>
           </div>
 
-          {/* Center: photo — desktop only */}
-          <div className="hidden md:block self-stretch">
-            <div className="h-full w-56 overflow-hidden rounded-2xl">
-              <img
-                src="/contacts-photo.jpg"
-                alt="Валерия Хачатурова"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-          </div>
-
-          {/* Right: list */}
+          {/* Center: list */}
           <div className="space-y-6">
             <p className="section-label text-cream/80 mb-6">
               Моя аудитория
@@ -62,6 +51,17 @@ export default function ForWhom() {
                 <p className="text-cream/80 font-normal leading-snug">{item}</p>
               </div>
             ))}
+          </div>
+
+          {/* Right: photo — desktop only */}
+          <div className="hidden md:block self-center">
+            <div className="w-56 overflow-hidden rounded-2xl">
+              <img
+                src="/contacts-photo.jpg"
+                alt="Валерия Хачатурова"
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
       </div>

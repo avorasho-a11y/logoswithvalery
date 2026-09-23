@@ -52,7 +52,7 @@ export default function Contacts() {
             <img
               src="/contacts-photo.jpg"
               alt="Валерия Хачатурова"
-              className="w-full h-80 object-cover object-top"
+              className="w-full"
             />
           </div>
         </div>
