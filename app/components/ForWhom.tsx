@@ -13,7 +13,7 @@ export default function ForWhom() {
       </div>
 
       <div className="py-12 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-[1fr_auto_1fr] md:gap-16 items-start">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 md:gap-10 items-start">
 
           {/* Left: heading + text */}
           <div>
@@ -54,14 +54,12 @@ export default function ForWhom() {
           </div>
 
           {/* Right: photo — desktop only */}
-          <div className="hidden md:block self-center">
-            <div className="w-56 overflow-hidden rounded-2xl">
-              <img
-                src="/contacts-photo.jpg"
-                alt="Валерия Хачатурова"
-                className="w-full"
-              />
-            </div>
+          <div className="hidden md:block self-center overflow-hidden rounded-2xl">
+            <img
+              src="/contacts-photo.jpg"
+              alt="Валерия Хачатурова"
+              className="w-full"
+            />
           </div>
         </div>
       </div>
