@@ -18,7 +18,7 @@ export default function About() {
           <p className="font-serif text-2xl italic leading-snug">
             Моя специализация — логотерапия.
             <br />
-            Она основана на поиске <strong>смысла в жизни</strong> и <strong>смысла жизни</strong>.
+            Она основана на поиске <strong className="not-italic text-white font-bold">смысла в жизни</strong> и <strong className="not-italic text-white font-bold">смысла жизни</strong>.
           </p>
         </div>
 
