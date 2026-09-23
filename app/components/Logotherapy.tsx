@@ -21,6 +21,16 @@ export default function Logotherapy() {
             <p className="text-sm text-muted mt-3">— Фридрих Ницше</p>
           </div>
 
+          {/* Frankl portrait — mobile only */}
+          <div className="md:hidden mt-5 text-center">
+            <img
+              src="/frankl.jpg"
+              alt="Виктор Франкл"
+              className="w-32 mx-auto object-cover grayscale rounded-2xl"
+            />
+            <p className="text-xs text-muted mt-2">Виктор Франкл</p>
+          </div>
+
           <div className="mt-5 flex gap-6 md:gap-8">
             {["Свобода воли", "Воля к смыслу", "Смысл жизни"].map((pillar) => (
               <div key={pillar} className="text-center">
@@ -60,7 +70,7 @@ export default function Logotherapy() {
           </div>
 
           {/* Portrait — desktop only */}
-          <div className="hidden md:block text-center">
+          <div className="hidden md:block text-center md:text-left">
             <img
               src="/frankl.jpg"
               alt="Виктор Франкл"
