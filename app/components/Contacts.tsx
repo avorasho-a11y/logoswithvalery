@@ -1,37 +1,60 @@
 export default function Contacts() {
   return (
     <section id="contacts" className="py-12 md:py-24 bg-beige">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <p className="section-label mb-4">
-          Контакты
-        </p>
-        <h2 className="font-serif text-5xl md:text-6xl font-semibold text-chocolate mb-6 leading-none">
-          Готовы сделать
-          <br />
-          первый шаг?
-        </h2>
-        <p className="text-dark/60 font-light max-w-md mx-auto mb-8 leading-snug">
-          Первая консультация — это знакомство. Мы поговорим о вашем
-          запросе, и вы поймёте, хотите ли продолжить работу.
-        </p>
 
-        <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8 md:mb-14">
-          <a
-            href="https://t.me/valery1503"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-10 py-4 bg-chocolate text-cream text-xs tracking-widest uppercase hover:bg-dark transition-colors text-center"
-          >
-            Telegram
-          </a>
-          <a
-            href="https://wa.me/79857607579"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-10 py-4 border border-chocolate/40 text-chocolate text-xs tracking-widest uppercase hover:border-chocolate transition-colors text-center"
-          >
-            WhatsApp
-          </a>
+      {/* Mobile photo banner */}
+      <div className="md:hidden h-56 overflow-hidden relative mb-10">
+        <img
+          src="/contacts-photo.jpg"
+          alt="Валерия Хачатурова"
+          className="w-full h-full object-cover object-top"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-beige/80 to-transparent" />
+      </div>
+
+      <div className="max-w-5xl mx-auto px-6">
+        {/* Text + Photo */}
+        <div className="grid md:grid-cols-2 md:gap-16 md:items-center mb-8 md:mb-14">
+          <div className="text-center md:text-left">
+            <p className="section-label mb-4">Контакты</p>
+            <h2 className="font-serif text-5xl md:text-6xl font-semibold text-chocolate mb-6 leading-none">
+              Готовы сделать
+              <br />
+              первый шаг?
+            </h2>
+            <p className="text-dark/60 font-light max-w-md mx-auto md:mx-0 mb-8 leading-snug">
+              Первая консультация — это знакомство. Мы поговорим о вашем
+              запросе, и вы поймёте, хотите ли продолжить работу.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+              <a
+                href="https://t.me/valery1503"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-10 py-4 bg-chocolate text-cream text-xs tracking-widest uppercase hover:bg-dark transition-colors text-center"
+              >
+                Telegram
+              </a>
+              <a
+                href="https://wa.me/79857607579"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-10 py-4 border border-chocolate/40 text-chocolate text-xs tracking-widest uppercase hover:border-chocolate transition-colors text-center"
+              >
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          {/* Photo - desktop only */}
+          <div className="hidden md:block overflow-hidden rounded-2xl">
+            <img
+              src="/contacts-photo.jpg"
+              alt="Валерия Хачатурова"
+              className="w-full h-80 object-cover object-top"
+            />
+          </div>
         </div>
 
         <div className="border-t border-taupe/40 pt-8 grid sm:grid-cols-3 gap-6 text-left">
