@@ -1,17 +1,6 @@
 export default function Contacts() {
   return (
     <section id="contacts" className="py-12 md:py-24 bg-beige">
-
-      {/* Mobile photo banner */}
-      <div className="md:hidden h-56 overflow-hidden relative mb-10">
-        <img
-          src="/contacts-photo.jpg"
-          alt="Валерия Хачатурова"
-          className="w-full h-full object-cover object-top"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-beige/80 to-transparent" />
-      </div>
-
       <div className="max-w-5xl mx-auto px-6">
         {/* Text + Photo */}
         <div className="grid md:grid-cols-2 md:gap-16 md:items-center mb-8 md:mb-14">
@@ -27,7 +16,7 @@ export default function Contacts() {
               запросе, и вы поймёте, хотите ли продолжить работу.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start mb-8 md:mb-0">
               <a
                 href="https://t.me/valery1503"
                 target="_blank"
@@ -47,7 +36,14 @@ export default function Contacts() {
             </div>
           </div>
 
-          {/* Photo - desktop only */}
+          {/* Photo - mobile: below buttons, desktop: right column */}
+          <div className="md:hidden overflow-hidden rounded-2xl">
+            <img
+              src="/contacts-photo.jpg"
+              alt="Валерия Хачатурова"
+              className="w-full"
+            />
+          </div>
           <div className="hidden md:block overflow-hidden rounded-2xl">
             <img
               src="/contacts-photo.jpg"

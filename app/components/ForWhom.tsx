@@ -1,17 +1,6 @@
 export default function ForWhom() {
   return (
     <section className="bg-chocolate text-cream overflow-hidden">
-
-      {/* Mobile photo banner */}
-      <div className="md:hidden h-52 overflow-hidden relative">
-        <img
-          src="/contacts-photo.jpg"
-          alt="Валерия Хачатурова"
-          className="w-full h-full object-cover object-top"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-chocolate/80 to-transparent" />
-      </div>
-
       <div className="py-12 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 md:gap-10 items-start">
 
@@ -61,6 +50,15 @@ export default function ForWhom() {
               className="w-full"
             />
           </div>
+        </div>
+
+        {/* Photo - mobile only, below content */}
+        <div className="md:hidden px-6 mt-8">
+          <img
+            src="/contacts-photo.jpg"
+            alt="Валерия Хачатурова"
+            className="w-full rounded-2xl"
+          />
         </div>
       </div>
     </section>
