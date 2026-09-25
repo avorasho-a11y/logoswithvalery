@@ -1,17 +1,12 @@
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col bg-cream">
-      {/* Mobile: photo strip at top */}
-      <div className="md:hidden relative h-[55vw] max-h-72 bg-beige overflow-hidden rounded-b-3xl">
-        <img src="/valeria.jpg" alt="Валерия Хачатурова" className="absolute inset-0 w-full h-full object-cover object-top" />
-        <div className="absolute inset-0 bg-gradient-to-t from-cream/40 to-transparent" />
-        <div className="absolute top-4 right-4 w-10 h-10 border border-blue/40" />
-      </div>
-
       {/* Content */}
       <div className="flex-1 flex items-center">
-        <div className="max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center py-16 md:py-0">
-          <div className="order-2 md:order-1">
+        <div className="max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-8 md:gap-12 items-center py-16 md:py-0">
+
+          {/* Text */}
+          <div className="order-1 md:order-1">
             <p className="section-label mb-5">
               Психолог · Логотерапевт
             </p>
@@ -47,18 +42,10 @@ export default function Hero() {
                 Узнать больше
               </a>
             </div>
-
-            {/* Mobile scroll hint */}
-            <div className="flex items-center gap-3 mt-10 md:hidden">
-              <div className="w-8 h-px bg-chocolate/30" />
-              <span className="text-xs tracking-widest uppercase text-muted">
-                Листайте вниз
-              </span>
-            </div>
           </div>
 
           {/* Desktop photo */}
-          <div className="order-1 md:order-2 hidden md:flex justify-end">
+          <div className="order-2 hidden md:flex justify-end">
             <div className="relative w-80 h-[480px] lg:w-96 lg:h-[560px] rounded-3xl overflow-hidden">
               <div className="absolute inset-0 bg-beige" />
               <img src="/valeria.jpg" alt="Валерия Хачатурова" className="absolute inset-0 w-full h-full object-cover object-top" />
@@ -66,6 +53,16 @@ export default function Hero() {
               <div className="absolute -top-4 -right-4 w-16 h-16 border border-warm-brown/30" />
             </div>
           </div>
+
+          {/* Mobile photo — full portrait, no cropping */}
+          <div className="order-2 md:hidden flex justify-center pb-4">
+            <img
+              src="/valeria.jpg"
+              alt="Валерия Хачатурова"
+              className="w-64 h-auto rounded-3xl shadow-xl block"
+            />
+          </div>
+
         </div>
       </div>
     </section>
